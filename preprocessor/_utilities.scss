@@ -1,0 +1,27 @@
+@mixin positioning($position: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin flexible-box(
+    $direction: row,
+    $wrap: no-wrap, 
+    $justify-content: flex-start, 
+    $align-items: stretch,
+    $align-content: flex-start) {
+        display: flex;
+        flex-direction: $direction;
+        flex-wrap: $wrap;
+        justify-content: $justify-content;
+        align-items: $align-items;
+        align-content: $align-content;
+}
+
+@mixin area($width: null, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
